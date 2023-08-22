@@ -1,0 +1,64 @@
+<div class="wrapper">
+  <nav id="sidebar">
+    <ul class="components">
+      <li>
+        <i class="fa-solid fa-house fa-2xl"></i>
+      </li>
+      <li>
+        <i class="fa-solid fa-calendar fa-2xl"></i>
+      </li>
+      <li>
+        <i class="fa-solid fa-envelope fa-2xl"></i>
+      </li>
+      <li>
+        <i class="fa-solid fa-comment fa-2xl"></i>
+      </li>
+      <li>
+        <i class="fa-solid fa-user fa-2xl"></i>
+      </li>
+    </ul>
+  </nav>
+  <div id="main">
+      <p class="welcome">WELCOME!</p>
+      <p class="user">Jane Doe</p>
+      <button class="button">New Project</button>
+      <ul class="container">
+        <li class="item1" id="chart">
+          <apx-chart
+            [series]="chartOptions.series"
+            [chart]="chartOptions.chart"
+            [plotOptions]="chartOptions.plotOptions"
+            [labels]="chartOptions.labels"
+          ></apx-chart>
+        </li>
+        <h3 style="border-radius: 15px; background: cornflowerblue; text-align: center;">Overdue</h3>
+        <li class="item2" id="chart2">
+          <apx-chart
+            [series]="chartOptions2.series"
+            [chart]="chartOptions2.chart"
+            [plotOptions]="chartOptions2.plotOptions"
+            [labels]="chartOptions2.labels"
+          ></apx-chart>
+        </li>
+        <h3 style="border-radius: 15px; background: cornflowerblue; text-align: center;">Delayed</h3>
+        <li class="item3" id="chart3">
+          <apx-chart
+            [series]="chartOptions3.series"
+            [chart]="chartOptions3.chart"
+            [plotOptions]="chartOptions3.plotOptions"
+            [labels]="chartOptions3.labels"
+          ></apx-chart>
+        </li>
+        <h3 style="border-radius: 15px; background: cornflowerblue; text-align: center;">On track</h3>
+        <li class="item4" id="chart4">
+          <apx-chart
+            [series]="chartOptions4.series"
+            [chart]="chartOptions4.chart"
+            [plotOptions]="chartOptions4.plotOptions"
+            [labels]="chartOptions4.labels"
+          ></apx-chart>
+        </li>
+        <h3 style="border-radius: 15px; background: cornflowerblue; text-align: center;">On track</h3>
+      </ul>
+  </div>
+</div>

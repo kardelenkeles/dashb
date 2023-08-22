@@ -1,0 +1,87 @@
+
+.wrapper {
+  display: flex;
+  width: 25%;
+  align-items: stretch;
+}
+
+#sidebar {
+  min-width: 50px;
+  background: #7869de;
+  color: #fff;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+}
+
+#sidebar li {
+  margin: 10px 30px 20px;
+  width: 90px;
+  height: 150px;
+  list-style-type: none;
+}
+
+#sidebar ul li i {
+  min-width: 32px;
+}
+
+
+#main {
+  width: 100%;
+  padding: 40px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  position: relative;
+  left: 1350px;
+  bottom: 50px;
+}
+
+p.welcome{
+  font-family: "Andale Mono";
+}
+
+p.user{
+  font-family: "Arial" ;
+  font-size: 25px;
+}
+#chart {
+  padding: 0;
+  max-width: 350px;
+  margin: 35px auto;
+}
+
+ul.container {
+  list-style-type: none;
+  background: grey;
+  border-radius: 12px;
+
+}
+
+ul.container li{
+
+
+}
