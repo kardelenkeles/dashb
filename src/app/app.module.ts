@@ -6,6 +6,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {NgApexchartsModule} from "ng-apexcharts";
+import {HighchartsChartModule} from "highcharts-angular";
+import {CalendarModule} from "primeng/calendar";
+import {FormsModule} from "@angular/forms";
 
 
 
@@ -19,7 +22,11 @@ import {NgApexchartsModule} from "ng-apexcharts";
     BrowserModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    NgApexchartsModule
+    NgApexchartsModule,
+    HighchartsChartModule,
+    CalendarModule,
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

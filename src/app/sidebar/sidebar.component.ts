@@ -1,5 +1,7 @@
-import {Component, ViewChild} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {ApexChart, ApexNonAxisChartSeries, ApexPlotOptions, ChartComponent} from "ng-apexcharts";
+// import {EventObject, FullCalendarOptions} from "ngx-fullcalendar";
+
 
 export type ChartOptions = {
   series: ApexNonAxisChartSeries;
@@ -14,6 +16,9 @@ export type ChartOptions = {
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent {
+  date: Date[] | undefined;
+
+
   @ViewChild("chart") chart: ChartComponent;
   public chartOptions: Partial<ChartOptions> | any;
   public chartOptions2: Partial<ChartOptions> | any;

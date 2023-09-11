@@ -18,47 +18,187 @@
       </li>
     </ul>
   </nav>
+
   <div id="main">
-      <p class="welcome">WELCOME!</p>
-      <p class="user">Jane Doe</p>
-      <button class="button">New Project</button>
-      <ul class="container">
-        <li class="item1" id="chart">
+    <p class="welcome">WELCOME!</p>
+    <p class="user">Jane Doe</p>
+    <button class="button">New Project</button>
+
+    <div class="flex-container">
+      <div class="col-sm-1">
+        <p>STATISTICS</p>
+        <p>Processes</p>
+      </div>
+      <div class="flex">
+        <div class="item">
           <apx-chart
             [series]="chartOptions.series"
             [chart]="chartOptions.chart"
             [plotOptions]="chartOptions.plotOptions"
             [labels]="chartOptions.labels"
           ></apx-chart>
-        </li>
-        <h3 style="border-radius: 15px; background: cornflowerblue; text-align: center;">Overdue</h3>
-        <li class="item2" id="chart2">
+          <div class="stat">Overdue</div>
+        </div>
+
+        <div class="item">
           <apx-chart
             [series]="chartOptions2.series"
             [chart]="chartOptions2.chart"
             [plotOptions]="chartOptions2.plotOptions"
             [labels]="chartOptions2.labels"
           ></apx-chart>
-        </li>
-        <h3 style="border-radius: 15px; background: cornflowerblue; text-align: center;">Delayed</h3>
-        <li class="item3" id="chart3">
+          <div class="stat">Delayed</div>
+        </div>
+        <div class="item">
           <apx-chart
             [series]="chartOptions3.series"
             [chart]="chartOptions3.chart"
             [plotOptions]="chartOptions3.plotOptions"
             [labels]="chartOptions3.labels"
           ></apx-chart>
-        </li>
-        <h3 style="border-radius: 15px; background: cornflowerblue; text-align: center;">On track</h3>
-        <li class="item4" id="chart4">
+          <div class="stat">On track</div>
+        </div>
+
+        <div class="item">
           <apx-chart
             [series]="chartOptions4.series"
             [chart]="chartOptions4.chart"
             [plotOptions]="chartOptions4.plotOptions"
             [labels]="chartOptions4.labels"
           ></apx-chart>
-        </li>
-        <h3 style="border-radius: 15px; background: cornflowerblue; text-align: center;">On track</h3>
-      </ul>
+          <div class="stat">On track</div>
+        </div>
+      </div>
+
+      <div class="progress-bar">
+        <p>Backend</p>
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="5"
+               aria-valuemin="0"
+               aria-valuemax="100"></div>
+        </div>
+        <div class="icon"><i class="fas fa-calendar fa-lg"></i></div>
+        <p>Frontend</p>
+        <div class="progress">
+          <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+               aria-valuemax="100"></div>
+        </div>
+        <p>Design</p>
+        <div class="progress">
+          <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75"
+               aria-valuemin="0"
+               aria-valuemax="100"></div>
+        </div>
+        <p>Copyrighting</p>
+        <div class="progress">
+          <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="100"
+               aria-valuemin="0"
+               aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
+    <div class="main2">
+      <div class="flex-container2">
+        <div class="box">
+          <h3>MONTHLY GOAL</h3>
+          <p>January</p>
+          <h1>$1.000.0000</h1>
+          <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+              Dropdown button
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="flex-container3">
+        <div class="box2">
+          <div>
+            <h4 style="margin: 15px">PROJECTION</h4>
+            <h5 style="margin: 10px">January 4th</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cal">
+      <div class="chat">
+        <h3 style="margin-top: 20px; margin-left: 20px; margin-bottom: 20px;">CHAT</h3>
+        <div class="chats">
+          <div class="chat_avatar">P</div>
+          <div class="chat_info">
+            <div class="contact_name">Peter Dawson</div>
+            <div class="contact_job">Developer</div>
+          </div>
+        </div>
+        <div class="chats">
+          <div class="chat_avatar">P</div>
+          <div class="chat_info">
+            <div class="contact_name">Peter Dawson</div>
+            <div class="contact_job">Developer</div>
+          </div>
+        </div>
+        <div class="chats">
+          <div class="chat_avatar">P</div>
+          <div class="chat_info">
+            <div class="contact_name">Peter Dawson</div>
+            <div class="contact_job">Developer</div>
+          </div>
+        </div>
+        <div class="chats">
+          <div class="chat_avatar">P</div>
+          <div class="chat_info">
+            <div class="contact_name">Peter Dawson</div>
+            <div class="contact_job">Developer</div>
+          </div>
+        </div>
+        <div class="chats">
+          <div class="chat_avatar">P</div>
+          <div class="chat_info">
+            <div class="contact_name">Peter Dawson</div>
+            <div class="contact_job">Developer</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-container4">
+        <div class="appos">
+          <p style="margin-top: 30px; margin-left: 30px; margin-bottom: 30px; font-size: 20px">UPCOMING APPOINTMENTS</p>
+          <div class="appo">
+            <div class="avatar">P</div>
+            <div class="info">
+              <div class="name">Peter Dawson</div>
+              <button class="btn btn-outline-info">Cancel</button>
+            </div>
+          </div>
+          <div class="appo">
+            <div class="avatar">P</div>
+            <div class="info">
+              <div class="name">Peter Dawson</div>
+              <button class="btn btn-outline-info">Cancel</button>
+            </div>
+          </div>
+          <div class="appo">
+            <div class="avatar">P</div>
+            <div class="info">
+              <div class="name">Peter Dawson</div>
+              <button class="btn btn-outline-info">Cancel</button>
+            </div>
+          </div>
+          <div class="appo">
+            <div class="avatar">P</div>
+            <div class="info">
+              <div class="name">Peter Dawson<button class="btn btn-outline-info" >Cancel</button></div>
+
+            </div>
+          </div>
+        </div>
+        <div class="calendar">
+          <div class="card flex justify-content-center">
+            <p-calendar class="max-w-full" [(ngModel)]="date" [inline]="true" [showWeek]="true"></p-calendar>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+

@@ -1,12 +1,11 @@
-
 .wrapper {
   display: flex;
-  width: 25%;
+  width: 100%;
   align-items: stretch;
+  background-color: aliceblue;
 }
 
 #sidebar {
-  min-width: 50px;
   background: #7869de;
   color: #fff;
 }
@@ -28,14 +27,14 @@
 
 
 #main {
-  width: 100%;
+  width: 90%;
   padding: 40px;
   min-height: 100vh;
-  display: flex;
   flex-direction: column;
+
 }
 
-button {
+.button {
   background: #5E5DF0;
   border-radius: 999px;
   box-shadow: #5E5DF0 0 10px 20px -10px;
@@ -60,28 +59,158 @@ button {
   bottom: 50px;
 }
 
-p.welcome{
+p.welcome {
   font-family: "Andale Mono";
 }
 
-p.user{
-  font-family: "Arial" ;
+p.user {
+  font-family: "Arial";
   font-size: 25px;
 }
+
 #chart {
   padding: 0;
   max-width: 350px;
   margin: 35px auto;
 }
 
-ul.container {
+.flex-container {
   list-style-type: none;
-  background: grey;
-  border-radius: 12px;
+  border-radius: 22px;
+  display: flex;
+  float: left;
+  background-color: white;
+  width: 1000px;
+  height: 30vh;
+}
+
+.stat {
+  border-radius: 15px;
+  background: cornflowerblue;
+  text-align: center;
+  width: 100px;
+  font-size: 16px;
 
 }
 
-ul.container li{
+.item {
+  width: 160px;
+}
 
+.progress {
+  width: 100px;
+  margin: 10px;
+  display: flex;
+}
 
+.flex {
+  display: flex;
+  align-items: center;
+
+}
+
+.col-sm-1 {
+  margin: 20px;
+}
+
+.flex-container2 {
+  display: flex;
+  color: white;
+}
+
+.flex-container3 {
+  display: flex;
+  color: #5E5DF0;
+}
+
+.box {
+  background: #7869de;
+  border-radius: 22px;
+  width: 400px;
+  height: 15vh;
+  margin: 10px;
+}
+
+.box2 {
+  background: white;
+  border-radius: 22px;
+  width: 400px;
+  height: 15vh;
+  margin: 10px;
+}
+
+.main2 {
+
+}
+
+.chat {
+  background: white;
+  border-radius: 22px;
+  overflow: auto;
+  height: 450px;
+  width: 350px;
+}
+
+.chat_avatar {
+  width: 55px;
+  height: 55px;
+  background: #ddd9f7;
+  border-radius: 25px;
+  text-align: center;
+  margin: 10px;
+  font-size: 25px;
+}
+
+.contact_name {
+  font-size: 20px;
+  margin-bottom: 2px;
+  justify-items: center;
+}
+
+.contact_job {
+  font-size: 17px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.chats {
+  margin: 45px;
+  display: flex;
+  height: 35px;
+
+}
+
+.chat_info {
+  margin: 10px;
+}
+
+.flex-container4 {
+  border-radius: 22px;
+  display: flex;
+  background: white;
+  width: 1000px;
+  height: auto;
+  margin-left: 35px;
+}
+
+.cal {
+  display: flex;
+
+}
+
+.calendar {
+  margin: 30px;
+  margin-left: 350px;
+}
+
+.appos {
+  width: 300px;
+}
+
+.appo{
+  margin: 30px
+}
+
+.name{
+  font-size: 20px
 }
